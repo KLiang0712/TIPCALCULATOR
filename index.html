@@ -1,0 +1,70 @@
+<!-- 
+Sources: 
+https://spacebro.io/articles/create-tip-calculator-javascript
+
+https://codepen.io/spacebromx/pen/PoKEbmG?editors=1010
+
+https://www.jotform.com/answers/1502722-how-to-resize-textboxes-on-my-form
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<div class="app">
+  <h1 class="app__title">Restaurant Tip Calculator</h1>
+
+  <form id="tipForm">
+    
+    <div class="field">
+		  <label for="amount" class="field__label">Amount</label>
+		
+      <input type="text" name="amount" id="amount" placeholder="$ Bill Amount" class="field__input">
+    </div>
+
+    <div class="field">
+      <label for="tip" class="field__label">Tip</label>
+        <select name="tip" id="tip" class="field__input">
+          <option value="0" selected>No tip</option>
+          <option value="10">10% 🙂</option>
+          <option value="15">15% 🙂</option>
+          <option value="20">20% 🙂</option>
+          <option value="25">25% 🙂</option>
+          <option value="30">30% 🙂</option>   
+        </select>
+    </div> 
+  
+    <div class="field">
+      <label for="people" class="field__label">Number of Guests</label>
+        <input type="number" value="0" min="1" step="1" id="people" class="field__input">
+      
+    </div>
+</form>
+  
+  <button id="calculate">Calculate</button>
+    <div class="info">
+      <p class="info__tip"></p>
+      <p class="info__total"></p>        
+    </div>
+  
+  <button id="reset" onClick="reset()">Reset</button>
+  
+</div>
+ 
+<!-- Implement JavaScript reset function -->
+<script>
+  function reset() {
+    document.getElementById("tipForm").reset();
+  }
+</script>
+<script type="text/javascript" src="index.js">
+</script>

@@ -1,0 +1,104 @@
+body {
+    display: flex;
+      justify-content: center;
+    align-items: center;
+      margin: 0;
+      font-family: Arial; 
+    font-weight: bold; 
+    background-color: green;
+    width: 100%; 
+  }
+  
+  h1{
+    font-size:60px;
+    color: green; 
+  }
+  
+  .app {
+    background-color: gold; 
+    height: 600px; 
+    width: 600px;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 4rem 0; 
+    text-align: center; 
+  
+    &__title 
+    { 
+      margin: 0 0 1rem 0; 
+    }
+  }
+  
+  .field {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 45px;
+    font-size: 30px;
+    height: 50px; 
+    
+        &__label {
+          flex: 0 0 20%;
+          cursor: pointer;
+          font-size: 30px;
+      height: 50px; 
+      }
+  
+      &__input {
+          flex: 1;
+          padding: 0.3rem;
+          font-size: 30px;
+      height: 50px;
+      }
+  }
+  
+  input::placeholder
+  { 
+    margin: 0px; 
+    font-size: 20px;
+    
+  }
+  
+  #amount{
+    height: 4vw;
+    width: 15vw; 
+  }
+  
+  #people{
+    height: 60px; 
+    width: 120px; 
+    font-size: 30px; 
+  }
+  
+  select {
+    height: 60px;
+    width: 180px;
+    padding: 0px;
+    font-size: 30px; 
+  }
+  
+  #calculate{
+    background-color: green; 
+    color: white;
+    padding: 1 rem 1.4 rem; 
+    font-size: 30px; 
+    font-weight: bold; 
+    float: left;
+    font-family: Arial; 
+  }
+  
+  #reset {
+    background-color: red;
+    color: white; 
+    padding: 1 rem 1.4 rem; 
+    font-size: 30px;
+    font-weight: bold; 
+    float: right; 
+    font-family: Arial; 
+  }
+  
+  .data {
+    clear: both; 
+    display: none; 
+    font-size: 30px;
+    height: 60px; 
+  } 
